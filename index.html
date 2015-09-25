@@ -1,91 +1,22 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8' />
-    <meta content='width=device-width, minimum-scale=1.0, maximum-scale=1.0' name='viewport' />
-    <title>
-      Redis
-    </title>
-  </head>
-  <body class=''>
-    <div class='mobile-menu slideout-menu'>
-      <header class='menu-header'></header>
-      <section class='menu-section'>
-        <ul class='menu-section-list'>
-          <li>
-            <a class='home' href='/'>Home</a>
-          </li>
-          <li>
-            <a href='/commands'>Commands</a>
-          </li>
-          <li>
-            <a href='/clients'>Clients</a>
-          </li>
-          <li>
-            <a href='/documentation'>Documentation</a>
-          </li>
-          <li>
-            <a href='/community'>Community</a>
-          </li>
-          <li>
-            <a href='/download'>Download</a>
-          </li>
-          <li>
-            <a href='/support'>Support</a>
-          </li>
-          <li>
-            <a href='/topics/license'>License</a>
-          </li>
-        </ul>
-      </section>
-    </div>
-    <div class='site-wrapper'>
-      <!-- #include virtual="/include/head.html" -->
-      
-      <div class='site-content'>
-        <section class='home-callout home-section'>
-          <div class='title'>
-            <p>Redis is an open source (BSD licensed), in-memory <strong>data structure store</strong>, used as database, cache and message broker. It supports data structures such as
-            <a href="/topics/data-types-intro#strings">strings</a>, <a href="/topics/data-types-intro#hashes">hashes</a>, <a href="/topics/data-types-intro#lists">lists</a>, <a href="/topics/data-types-intro#sets">sets</a>, <a href="/topics/data-types-intro#sorted-sets">sorted sets</a> with range queries, <a href="/topics/data-types-intro#bitmaps">bitmaps</a>, <a href="/topics/data-types-intro#hyperloglogs">hyperloglogs</a> and <a href="/commands/geoadd">geospatial indexes</a> with radius queries. Redis has built-in <a href="/topics/replication">replication</a>, <a href="/commands/eval">Lua scripting</a>, <a href="/topics/lru-cache">LRU eviction</a>, <a href="/topics/transactions">transactions</a> and different levels of <a href="/topics/persistence">on-disk persistence</a>, and provides high availability via <a href="/topics/sentinel">Redis Sentinel</a> and automatic partitioning with <a href="/topics/cluster-tutorial">Redis Cluster</a>.</p>
-            <a class='learn-more' href='/topics/introduction'>Learn more</a>
-          </div>
-        </section>
-        <div class='home-intro home-section'>
-          <section>
-            <h2>Try it</h2>
-            <p>
-              Ready for a test drive? Check this
-              <a href='http://try.redis.io'>interactive tutorial</a>
-              that will walk you through the most important features of
-              Redis.
-            </p>
-          </section>
-          <section>
-            <h2>Download it</h2>
-            <p>
-              <a href='http://download.redis.io/releases/redis-3.0.4.tar.gz'>Redis 3.0.4 is the latest stable version.</a>
-              Interested in release candidates or unstable versions?
-              <a href='/download'>Check the downloads page.</a>
-            </p>
-          </section>
-          <section>
-            <h2>Quick links</h2>
-            <p>
-              Follow day-to-day Redis on <a href="http://twitter.com/redisfeed">Twitter</a> and
-              <a href="http://github.com/antirez/redis">GitHub</a>.
-              Get help or help others by subscribing to <a href="https://groups.google.com/forum/?fromgroups#!forum/redis-db">our mailing list</a>, we are 5,000 and counting!
-            </p>
-          </section>
-        </div>
-        <div class='home-buzz home-section'>
-          <section data-limit='5' id='buzz'>
-            <h2>Redis News</h2>
-            <ul></ul>
-            <a href='/buzz'>More...</a>
-          </section>
-        </div>
-      </div>
-      <!-- #include virtual="/include/footer.html" -->  
-    </div>
-  </body>
-</html>
+<<<<<<< HEAD
+aaaaaaaaa
+=======
+---
+ 　　layout: default
+ 　　title: 我的Blog
+ 　　---
+
+　　<h2>{{ page.title }}</h2>
+
+　　<p>最新文章</p>
+
+　　<ul>
+
+　　　　{% for post in site.posts %} 
+
+　　　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+
+　　　　{% endfor %}
+
+　　</ul>
+>>>>>>> fd2dcca4ef4441ba25b0864cbf9b814bc5be7d1b
