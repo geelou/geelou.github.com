@@ -1,0 +1,77 @@
+
+<div style="text-align:center;font-weight:bold;font-size:34px;">
+	生男生女清宫表速查
+</div>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;
+本测试根据清宫生男生女表制订，您不用去查清宫生男生女表，按提示输入，即可得出结果。预测结果仅供参考！生男生女都是宝！
+</p>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;注意：年龄以孕妇的虚岁为准，
+即孕妇的妈妈受孕孕妇的农历月份，例如90年农历12月出生的孕妇其妈妈受孕月份是农历2月，虚岁仍然为90年，
+92年农历4月出生的孕妇其妈妈受孕月份是前一年农历6月，虚岁应算91年，
+月份指孕妇自己怀孕宝宝的农历月份，遇农历的闰月，上半月以上个月份计算，下半月以下个月份计算。 
+</p>
+
+<div class="example">
+	<form name="form1" id="form1" method="get" action=""></form>
+<input type="hidden" name="act" value="ok" />
+<input type="hidden" name="cs" value="1" />我今年虚岁 <select name="nn" size="1" style="font-size: 9pt">
+      ><option value="18" >18</option><option value="19" >19</option><option value="20" >20</option><option value="21" >21</option><option value="22"  selected>22</option><option value="23" >23</option><option value="24" >24</option><option value="25" >25</option><option value="26" >26</option><option value="27" >27</option><option value="28" >28</option><option value="29" >29</option><option value="30" >30</option><option value="31" >31</option><option value="32" >32</option><option value="33" >33</option><option value="34" >34</option><option value="35" >35</option><option value="36" >36</option><option value="37" >37</option><option value="38" >38</option><option value="39" >39</option><option value="40" >40</option><option value="41" >41</option><option value="42" >42</option><option value="43" >43</option><option value="44" >44</option><option value="45" >45</option>
+     </select> 怀孕农历月份 <select name="yue" size="1" style="font-size: 9pt">
+      ><option value="1" >1</option><option value="2" >2</option><option value="3" >3</option><option value="4" >4</option><option value="5" >5</option><option value="6" >6</option><option value="7" >7</option><option value="8" >8</option><option value="9" >9</option><option value="10" >10</option><option value="11" >11</option><option value="12" >12</option>
+     </select>月 &nbsp;<input name="sub" type="button" value="开始推算" onclick="maleOrFemalePalace()">
+   
+		
+<p> 
+	<a href="/gongli2nongli.html">不知农历，点此进行公历转换农历</a>
+</p>
+</div>
+
+<script>
+	var maleArr = new Array();
+	maleArr[18] = [1,0,1,0,0,0,0,0,0,0,0,0];
+	maleArr[19] = [0,1,0,1,1,0,0,0,0,0,1,1];
+	maleArr[20] = [1,0,1,0,0,0,0,0,0,1,0,0];
+	maleArr[21] = [0,1,1,1,1,1,1,1,1,1,1,1];
+	maleArr[22] = [1,0,0,1,0,1,1,0,1,1,1,1];
+	maleArr[23] = [0,0,1,0,0,1,0,1,0,0,0,1];
+	maleArr[24] = [0,1,0,0,1,0,0,1,1,1,1,1];
+	maleArr[25] = [1,0,0,1,1,0,1,0,0,0,0,0];
+	maleArr[26] = [0,1,0,1,1,0,1,0,1,1,1,1];
+	maleArr[27] = [1,0,1,0,1,1,0,0,0,0,1,0];
+	maleArr[28] = [0,1,0,1,1,1,0,0,0,0,1,1];
+	maleArr[29] = [1,0,1,1,0,0,0,0,0,1,1,1];
+	maleArr[30] = [0,1,1,1,1,1,1,1,1,1,0,0];
+	maleArr[31] = [0,1,0,1,1,1,1,1,1,1,1,0];
+	maleArr[32] = [0,1,0,1,1,1,1,1,1,1,1,0];
+	maleArr[33] = [1,0,1,0,1,1,1,0,1,1,1,0];
+	maleArr[34] = [0,1,0,1,1,1,1,1,1,1,0,0];
+	maleArr[35] = [0,0,1,0,1,1,1,0,1,1,0,0];
+	maleArr[36] = [1,0,0,1,0,1,1,1,0,0,0,0];
+	maleArr[37] = [0,1,0,0,1,0,1,0,1,0,1,0];
+	maleArr[38] = [1,0,1,0,0,1,0,1,0,1,0,1];
+	maleArr[39] = [0,1,0,0,0,1,1,0,1,0,1,1];
+	maleArr[40] = [1,0,1,0,1,0,0,1,0,1,0,1];
+	maleArr[41] = [0,1,0,1,0,1,0,0,1,0,1,0];
+	maleArr[42] = [1,0,1,0,1,0,1,0,0,1,0,1];
+	maleArr[43] = [0,1,0,1,0,1,0,1,0,0,0,0];
+	maleArr[44] = [0,0,1,0,0,0,1,0,1,0,1,1];
+	maleArr[45] = [1,0,0,1,1,1,0,1,0,1,0,0];
+	
+	function maleOrFemalePalace()
+	{
+		var nnValue = parseInt($("select[name^='nn']").val());
+		
+		if(nnValue<18 || nnValue>45){
+			alert('清宫图只能计算18-45岁之间的年龄');
+			return;
+		}
+		
+		var yueValue = parseInt($("select[name^='yue']").val())-1;
+		
+		//alert(maleArr[nnValue][yueValue]);
+		$('#form1').attr('action', 'index_' + maleArr[nnValue][yueValue] + '.html');
+		$('#form1').submit();
+	}
+</script>

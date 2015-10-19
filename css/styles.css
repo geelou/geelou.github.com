@@ -155,7 +155,7 @@ a:hover { text-decoration: underline; color: #0099ff; }
 
 body { background-color: white; color: #333333; padding: 0; margin: 0; }
 
-.site-footer { color: #777777; font-size: 11px; margin: 20px; padding: 10px 0 0 0; }
+.site-footer { color: #777777; font-size: 11px; margin: 10px; }
 .site-footer a { color: #444444; }
 .site-footer .sponsor img { vertical-align: middle; width: 59px; height: 15px; }
 
